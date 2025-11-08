@@ -1,4 +1,5 @@
 function executeRun() {
-    const url = "https://vod-ka.bet";
+    const url = "../index.html";
     window.location.href = url;
 }
+
