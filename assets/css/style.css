@@ -1,1 +1,295 @@
-body,html{margin:0;padding:0;width:100%;height:100%;background-color:#0c111c;overflow-x:hidden;overflow-y:auto}@keyframes fadeInOut{0%,100%{opacity:0}50%{opacity:1}}*{text-decoration:none;font-size:20px;font-weight:bold;border-radius:5px}#background{width:100vw;height:calc(100vw * 2.99);background-image:url('../images/vodka-casino.jpg');background-size:100% auto;background-repeat:no-repeat;background-position:top center;cursor:pointer}h1,h2,p,ul,ol{margin:0;padding:0;margin-top:-1900px;color:transparent;user-select:none}nav{position:fixed;top:1080px;left:100px;background:transparent;padding:10px;border-radius:5px;z-index:10}nav ul{list-style:none;padding:0}nav ul li{margin:5px 0}nav ul li a{text-decoration:none;color:transparent;font-weight:bold}nav ul li a:hover{text-decoration:underline}canvas{position:fixed;bottom:0;left:0;width:90px;height:90px;border-radius:45px;z-index:10001}@media (max-width:768px) and (orientation:portrait){#background{background-image:url('../images/mobile.jpg');width:calc(100vw + 40px);height:calc((100vw + 40px) * 2.11);margin-left:-20px;margin-right:-20px}}
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #1a73e8;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e8f4fd;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: #34a853;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2e7d32;
+}
+
+/* News section */
+.news-section, .articles-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.news-section h2, .articles-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.news-item, .article-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.news-item:hover, .article-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item h3, .article-item h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.news-item p, .article-item p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Articles list */
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.article-item {
+    padding: 2rem;
+}
+
+/* FAQ section */
+.faq-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-item summary {
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 8px;
+}
+
+.faq-item p {
+    padding: 1.5rem;
+}
+
+/* Content sections */
+.content-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Bike types */
+.bike-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.type-item {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.type-item:hover {
+    transform: translateY(-5px);
+}
+
+.type-item h3 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+/* Tips list */
+.tips-list {
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.tips-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-section h2, .articles-section h2, .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .articles-list {
+        gap: 1rem;
+    }
+}

@@ -1,10 +1,11 @@
 {
-  "name": "Casino Vodka",
-  "short_name": "CasinoVodka",
+  "name": "JustInfo",
+  "short_name": "JustInfo",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#1a73e8",
+  "lang": "en",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
