@@ -12,21 +12,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="JustInfo Article Archive - useful information on various topics.">
-    <meta name="keywords" content="archive, articles, JustInfo">
+    <meta name="keywords" content="archive, articles, JustInfo, 1 million 477 thousand 678 visitors, 13.11.2025">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://justinfo.si/Arhiv/">
-    <link rel="alternate" hreflang="en" href="https://www.justinfo.si">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml">
     <link rel="icon" href="../favicon.ico">
     <link rel="icon" href="../favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../icons/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="../icons/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../icons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../icons/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../icons/web-app-manifest-512x512.png">
     <link rel="mask-icon" href="../icons/favicon.svg" color="#000000">
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
@@ -135,6 +130,30 @@
             });
         }
     </script>
+    <script>
+function updateDateInMeta() {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Месяцы с 0
+    const year = today.getFullYear();
+
+    const formattedDate = `${day}.${month}.${year}`;
+
+    // Находим мета-тег по name="keywords"
+    const keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (keywordsMeta) {
+        // Обновляем содержимое, заменяя старую дату на новую
+        let content = keywordsMeta.getAttribute('content');
+        if (content) {
+            content = content.replace(/\d{2}\.\d{2}\.\d{4}/, formattedDate);
+            keywordsMeta.setAttribute('content', content);
+        }
+    }
+}
+
+// Запускаем при загрузке DOM
+document.addEventListener('DOMContentLoaded', updateDateInMeta);
+</script>
 </body>
 
 </html>
