@@ -10,6 +10,11 @@
         <lastmod>2025-11-11</lastmod>
         <priority>0.80</priority>
     </url>
+     <url>
+        <loc>https://www.justinfo.si/vvc-converter/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <priority>0.80</priority>
+    </url>
     <url>
         <loc>https://justinfo.si/bike.html</loc>
         <lastmod>2025-11-11</lastmod>
@@ -86,4 +91,5 @@
         <priority>0.70</priority>
     </url>
 </urlset>
+
 
