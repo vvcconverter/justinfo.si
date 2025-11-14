@@ -1,0 +1,61 @@
+Roskomnadzor: Blocked websites, blocking results, and what they led to. ai - data
+An analysis of the impact of lockdowns on the Russian IT sector and digital economy
+
+
+👉 Leave a Review
+
+It's no secret that Roskomnadzor blocks both websites and services it deems good and bad.
+
+Comparison of internet resource accessibility before and after blocks RKN
+They assemble a committee, and all the high-level technical specialists check your site for usefulness, patriotism—and without violating the Russian Constitution on freedom of speech and expression—they slow down the site, resource, or messenger using a referendum and voting method... Yeah, you believed it—what a moron you are.
+
+They just go and block a website or hosting provider. For example, CloudFlare—yes, they just went and blocked it.
+
+The fact that there are billions of websites owned by Russian IT specialists doesn't bother anyone. And the fact that Russian IT professionals will have to migrate their hundreds of thousands of websites targeting Russian audiences from free hosting that supports Python and much more to scam-ridden services doesn't bother anyone.
+
+And all the propaganda about the SVO is completely in the hands of the West, thanks to the same Roskomnadzor
+Let me explain:
+
+1. Blocking YouTube - during the height of propaganda about the SVO and the WHOLE WORLD, the opinion of the West is received - but not the Russian Federation bloggers.
+
+2. Blocking foreign hosting providers – while all the top-ranking websites migrate to Russian platforms with limited functionality, audience, and speed, their search rankings will plummet, and foreign ones will take their place. And then the entire world will hear the West's opinion.
+
+3. Blocking messengers (the Russian word was simply silenced) - now you understand that Western propaganda wins here too, becoming the top topic in messengers.
+
+4. During the ruble's decline—to 120 rubles per dollar—the Russian Central Bank blocked services like WebMoney and others because of casino deposits. Yes, it was possible to make deposits through these services, but damn, THE DEPOSIT WAS MADE IN DOLLARS, NOT RUBLES. As a result, e-wallets lose their licenses, and their rubles become toilet paper, which they can't manage—they have to get rid of it, and they throw away rubles cheaply, which further depresses the ruble exchange rate.
+
+This is either idiocy on the part of Roskomnadzor or the work of a foreign agent—under the plausible pretext of blocking the West, Russian voices are being silenced in Russia and the West. And the entire world is being exposed to the West's opinion. The downward pressure on the ruble is affecting prices and the well-being of citizens.
+Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs
+Let me repeat: from a FREE MERCEDES (Cloudflare) with worldwide traffic, you'll be shamelessly forcibly transferred to a PAID ZAPOROZHETS (reg-ru; nic-ru) – with limited functionality and a 140 million-strong audience, and a constant connection to paid services – for you – with these services and spam in your inbox. And then, watch out, lest they withdraw the last money from your card – which is difficult to get back.
+
+
+👉 Read reviews about Host Ru
+
+The outflow of Russian IT specialists abroad
+
+Map of IT specialists outflow from Russia
+This action by Roskomnadzor is completely destroying Russian IT—and with it, front-end development, game development, 3D modeling, design, art, and voiceover. Roskomnadzor gave all this traffic away to the West for free. All search queries for Russian websites have plummeted in rankings across all search engines: Google, Yandex, Bing, and others. Western websites, games, and services have taken their place.
+
+They shot themselves in the foot—it set back all the IT developers who had spent decades building SEO traffic—by 10 years. This will have repercussions in the future. They'll be screaming, "WE DON'T HAVE IT SPECIALISTS," just like they're now screaming, "We don't have the manpower or the skills."
+
+As a result, Russian IT specialists are moving abroad—where they won't have to use API keys over a VPN, where they can test in a Python development environment without a VPN and see real test results. Where they get paid 100 times more, where there's no bureaucracy, red tape, or Roskomnadzor, and where no one decides to forcefully shove your development up their ass on a whim.
+
+And the most important thing is that there are no analogues in Russia, and what remains is finished off by Roskomnadzor.
+
+Comparison table: foreign vs. Russian services after Roskomnadzor's blocking
+Criterion	Foreign services (Cloudflare, Google, GitHub)	Russian equivalents (Reg.ru, NIC.ru, paid hosting)	Consequences for the IT sector
+Price	Free or shareware	Paid, often expensive, and with subscriptions	Rising costs, fewer resources for startups
+Functional	Wide, Python support, scalability	Limited, fewer options	Project slowdowns, inability to fully migrate functions
+Availability	High, no blockages in the world	Access only in Russia	Loss of international audience
+Support	24/7, professional	Limited, bureaucracy	Delay in resolving problems
+Speed ​​and stability	High, CDN and optimization	Slower, smaller infrastructure	Slowing down websites, degrading user experience
+Impact on ratings	High SEO, search engine integration	Limited SEO	Decline in traffic, decreased search visibility
+Effect on IT	Support for startups and freelancers	Forced restriction, loss of functionality	Industrial stagnation, outflow of specialists
+
+In summary:
+In this regard, Roskomnadzor looks like a stupid child who doesn't understand the consequences, or perhaps this is a foreign agent's activity. What do you think about this? Write a review:
+
+Your nickname
+your review...
+Send
+© 2025 11 14 | 21 06 44 Analysis of the consequences of RKN blocking for the Russian IT sector according to ai data All rights reserved.

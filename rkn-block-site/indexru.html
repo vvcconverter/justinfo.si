@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.justinfo.si/rkn-block-site/" />
+  <link rel="alternate" href="https://justinfo.si/rkn-block-site/" />
+  <link rel="alternate" href="http://justinfo.si/rkn-block-site/" /> 
+     <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/web-app-manifest-512x512.png">
+    <meta name="description" content="Анализ последствий блокировок сайтов Роскомнадзором для российской IT-индустрии: влияние на инновации, кибербезопасность и доступ к информации.">
+<meta name="keywords" content="РКН, блокировка сайтов, Роскомнадзор, IT-индустрия, цензура в интернете, кибербезопасность, законодательство РФ, интернет-цензура">
+    <title>РКН: Заблокированные сайты и последствия для IT-сферы</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как РКН блокирует сайты и какие последствия это имеет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "РКН блокирует сайты без детальной проверки, включая хостинги вроде Cloudflare, что приводит к необходимости переноса российских IT-проектов на менее функциональные отечественные платформы, потере трафика и снижению позиций в поисковых системах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как блокировки влияют на пропаганду и информационную политику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Блокировка YouTube, зарубежных хостингов и мессенджеров ограничивает доступ к российской точке зрения, усиливая западную пропаганду. Российские ресурсы теряют позиции в поисковой выдаче, уступая место зарубежным аналогам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Каковы последствия блокировки Cloudflare для российских IT-специалистов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Блокировка Cloudflare вынуждает переходить с бесплатного международного сервиса на платные российские аналоги с ограниченным функционалом, что увеличивает расходы и снижает качество услуг для IT-разработчиков."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как блокировки влияют на отток IT-специалистов из России?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ограничение доступа к международным инструментам разработки, необходимость использования VPN для работы с API, снижение доходов и бюрократические препятствия стимулируют отток IT-специалистов за границу, где они получают лучшие условия для работы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Каковы различия между зарубежными и российскими сервисами после блокировок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зарубежные сервисы предлагают бесплатные или условно-бесплатные решения с широким функционалом и международной доступностью, тогда как российские аналоги обычно платные, с ограниченными возможностями и доступны преимущественно внутри страны."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1011px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.8s ease-out;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+    padding: 40px;
+    margin-bottom: 40px;
+    animation: slideUp 0.6s ease-out;
+    transition: var(--transition);
+}
+
+.content-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.image-placeholder:hover {
+    transform: scale(1.001);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    align-items: center;
+}
+
+a {
+    color: blue;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #ffd70022 0%, #ffd70022 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.quote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: rgb(0, 15, 128);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.comparison-table th {
+    background-color: var(--primary-color);
+    color: rgb(29, 0, 192);
+    padding: 16px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.comparison-table td {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.comparison-table tr:hover {
+    background-color: #f0f8ff;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #dc3545;
+    margin: 40px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+button {
+    color: blue;
+    border: none;
+    background:transparent;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .content-section { padding: 20px; }
+    .comparison-table {
+        font-size: 0.75rem;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .comparison-table th, .comparison-table td {
+        padding: 12px 8px;
+        min-width: 100px;
+    }
+    .comparison-table th {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .comparison-table td {
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 769px) {
+    .image-placeholder img { max-height: 768px; }
+}
+
+.iframe {
+    height: 215px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .image-placeholder img {
+        max-height: 480px;
+    }
+    .iframe {
+        height: 215px;
+    }
+}
+
+@media (min-width: 430px) {
+    .iframe {
+        height: 400px;
+    }
+}
+
+@media (orientation: landscape) {
+    .iframe {
+        height: 358px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .iframe {
+        height: 358px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>РКН: заблокированные сайты итоги блокировки к чему это привело. ai - данные</h1>
+            <p class="subtitle">Анализ последствий блокировок для российского IT-сектора и цифровой экономики</p>
+            <a href="https://vod-ka.bet/rkn-block-site/inddex.html"style="text-decoration: none;"><p>🌐EN</p></a>
+        </header>
+        
+        <button onclick="scrollToBottom()" style="padding: 10px; cursor: pointer;color: blue;border: none; background:transparent"><p>👉 Оставить Отзыв</p></button>
+
+<script>
+function scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
+</script>
+        <section class="content-section">
+            <p>Ни для кого не секрет, что РКН блокирует как хорошие, так и плохие на их взгляд сайты и сервисы.</p>
+            <div class="image-placeholder">
+<picture id="mobile-lazy-picture">
+  <source media="(min-width: 768px)" srcset="https://vod-ka.bet/img/Comparison_of_internet_resource_accessibility_before_and_after_blocks_RKN.avif">
+  <source media="(max-width: 767px)" srcset="https://vod-ka.bet/img/Comparison_of_internet_resource_accessibility_before_and_after_blocks_RKN2.avif">
+  <img src="https://vod-ka.bet/img/Comparison_of_internet_resource_accessibility_before_and_after_blocks_RKN.avif" 
+       alt="Comparison of internet resource accessibility before and after blocks RKN"
+       title="Comparison of internet resource accessibility before and after blocks RKN"
+       style="width: auto; height: auto;">
+</picture>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const picture = document.getElementById('mobile-lazy-picture');
+    const img = picture.querySelector('img');
+    
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      img.loading = 'lazy';
+    }
+  });
+</script>
+            </div>
+            
+            <p>Они собирают комиссию, и все технические специалисты высокого уровня проверяют ваш сайт по полезности, патриотичности - и не нарушая Конституцию РФ о свободе слова и изъявления - методом референдума и голосования замедляют сайт или ресурс или мессенджер... Ага, поверил - ну ты и олень.</p>
+            
+            <p>Они просто берут и блокируют сайт или хостинг. К примеру, CloudFlare - да, взяли и заблокировали.</p>
+            
+            <p>А то, что там миллиарды сайтов российских IT-специалистов, никого не колышет. И то, что с бесплатного хостинга, поддерживающего Python и многое другое, российским IT придется переносить свои сотни тысяч сайтов, ориентированных на российскую аудиторию, на scam-гвн-сервисы, никого не волнует.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>И вся пропаганда про СВО - полностью в руках Запада по вене того же РКН</h2>
+            
+            <p>Объясню:</p>
+            
+            <p><span class="highlight">1. Блокировка YouTube</span> - в период разгара пропаганды о СВО и ВЕСЬ МИР получает мнение запада - но не РФ блогеров.</p>
+            
+            <p><span class="highlight">2. Блокировка хостингов зарубежных</span> - пока все сайты, которые были в топе, перенесут на РФ площадки с ограниченным функционалом, аудиторией и скоростью, они упадут в поисковой выдаче - на их место встанут зарубежные. И тут весь мир получает мнение запада.</p>
+            
+            <p><span class="highlight">3. Блокировка мессенджеров</span> (российское слово просто заткнули) - теперь вы понимаете, что и тут выигрывает западная пропаганда, которая становится в топ в мессенджерах.</p>
+            
+            <p><span class="highlight">4. Центральным банком РФ</span> в период падения рубля - до 120р за 1 Dollar - были заблокированы такие сервисы как WebMoney и др. - по причине депозитов в КАЗИНО. Да, с этих сервисов можно было сделать депозит, но черт возьми, ДЕПОЗИТ ДЕЛАЛИ В ДОЛЛАРАХ, НЕ В РУБЛЯХ. И в итоге электронные кошельки теряют лицензию, и у них рубли превращаются в туалетную бумагу, которой они не могут распоряжаться - и им приходится от нее избавиться, и они по дешевке выкидывают рубль, что еще сильнее бьет по курсу рубля.</p>
+            
+            <div class="quote">
+                Это или идиотизм от РКН или иноагентская деятельность - под благовидным предлогом блокировки запада затыкаются российские рты в России и на Западе. И весь мир получает мнение запада. Удары по рублю в сторону понижения - что влияет на цены и благополучие граждан.
+            </div>
+        </section>
+
+        <section class="content-section">
+        <div class="image-placeholder">
+             <picture>
+                <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/vvcconverter/vod-ka.bet/refs/heads/main/img/Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs.avif">
+                <source media="(max-width: 767px)" srcset="https://vod-ka.bet/img/Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs2.avif">
+                <img src="https://raw.githubusercontent.com/vvcconverter/vod-ka.bet/refs/heads/main/img/Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs.avif" 
+         alt="Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs"
+         title="Comparison_Mercedes_Cloudflare_and_Zaporozhets_Russian_analogs"
+         style="width: auto; height: auto;" loading="lazy">
+            </picture>
+        </div>
+            
+            <p>Повторюсь: с БЕСПЛАТНОГО МЕРСЕДЕСА (Cloudflare) с всемирным трафиком - тебя без зазрения совести принудительно пересадят на ПЛАТНЫЙ ЗАПОРОЖЕЦ (reg-ru; nic-ru) - с ограниченным функционалом и 140-миллионной аудиторией и постоянным подключением платных услуг - тебе - этими сервисами и спамом на почту. И тут держись, чтобы не сняли последние с карты деньги - которые вернуть проблематично.</p>
+       
+            
+<button onclick="openModal()"><p>👉 Читайте отзывы О Хост Ru</p></button>
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.455); z-index:1000;border-radius: 30px;">
+  <div style="position:relative; width:90%; max-width:1100px; height:80vh; margin:5vh auto; background:white; padding:20px; border-radius:25px;">
+    <span onclick="closeModal()" style="
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 45px;
+    cursor: pointer;
+    color: #ff0000;
+    background: white;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    line-height: 1;
+">
+    ×
+</span>
+    <div style="height:calc(100% - 40px); overflow-y:auto; padding:10px;">
+      <img src="https://vod-ka.bet/img/otzivy.avif" alt="Отзывы" style="width:100%; height:auto;" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('modal').style.display = 'block';
+}
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+</script>
+
+
+
+        </section>
+        
+        <section class="content-section">
+            <p>Отток Российских it - специалистов за границу</p>
+            <div class="image-placeholder">
+                
+                            <picture>
+                <source media="(min-width: 768px)" srcset="https://vod-ka.bet/img/Map_of_IT_specialists_outflow_from_Russia.avif">
+                <source media="(max-width: 767px)" srcset="https://vod-ka.bet/img/Map_of_IT_specialists_outflow_from_Russia2.avif">
+                <img src="https://vod-ka.bet/img/Map_of_IT_specialists_outflow_from_Russia.avif" 
+         alt="Map of IT specialists outflow from Russia"
+         title="Map of IT specialists outflow from Russia"
+         style="width: auto; height: auto;" loading="lazy">
+            </picture>
+            </div>
+            
+            <p>Это действие РКН полностью убивает российских IT - а за ними фронтенд, геймдев, 3D-модели, дизайнеры, художники и озвучка. Весь этот трафик РКН бесплатно отдал Западу. Все поисковые запросы российских сайтов упали в рейтинге по всем поисковикам: Google, Yandex, Bing и других. И на их место встали западные сайты, игры, сервисы.</p>
+            
+            <p>Выстрелили себе в ногу - это откинуло на 10 лет назад всех IT-разработчиков, которые десятилетиями нарабатывали SEO-трафик - что скажется в будущем. БУДУТ КРИЧАТЬ "У НАС НЕТ IT-СПЕЦИАЛИСТОВ" - как сейчас кричат "у нас нет рабочей силы и рабочих специальностей".</p>
+            
+            <p>В итоге российские IT-специалисты едут за границу - где им не придется использовать ключи от API через VPN, где они смогут тестировать в среде разработки с Python без VPN и видеть реальные результаты тестов. Где платят в 100 раз больше, где нет бюрократии и волокиты и РКН, и где не решают по чьей-то прихоти засунуть твою разработку принудительно в зад.</p>
+            
+            <p class="highlight">А самое ГЛАВНОЕ - АНАЛОГОВ В РОССИИ НЕТ, А ТО ЧТО ОСТАЛОСЬ - ДОБИВАЕТ РКН.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Таблица сравнения: зарубежные vs российские сервисы после блокировок РКН</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Критерий</th>
+                        <th>Зарубежные сервисы (Cloudflare, Google, GitHub)</th>
+                        <th>Российские аналоги (Reg.ru, NIC.ru, платные хостинги)</th>
+                        <th>Последствия для IT-сферы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Стоимость</td>
+                        <td>Бесплатно или условно-бесплатно</td>
+                        <td>Платно, часто дорого и с подписками</td>
+                        <td>Рост расходов, меньше ресурсов для стартапов</td>
+                    </tr>
+                    <tr>
+                        <td>Функционал</td>
+                        <td>Широкий, поддержка Python, масштабируемость</td>
+                        <td>Ограниченный, меньше возможностей</td>
+                        <td>Замедление проектов, невозможность полного переноса функций</td>
+                    </tr>
+                    <tr>
+                        <td>Доступность</td>
+                        <td>Высокая, без блокировок в мире</td>
+                        <td>Доступ только в РФ</td>
+                        <td>Потеря международной аудитории</td>
+                    </tr>
+                    <tr>
+                        <td>Поддержка</td>
+                        <td>Круглосуточная, профессиональная</td>
+                        <td>Ограниченная, бюрократия</td>
+                        <td>Задержка в решении проблем</td>
+                    </tr>
+                    <tr>
+                        <td>Скорость и стабильность</td>
+                        <td>Высокая, CDN и оптимизация</td>
+                        <td>Медленнее, меньшая инфраструктура</td>
+                        <td>Замедление сайтов, снижение пользовательского опыта</td>
+                    </tr>
+                    <tr>
+                        <td>Влияние на рейтинги</td>
+                        <td>Высокий SEO, интеграции с поисковиками</td>
+                        <td>Ограниченный SEO</td>
+                        <td>Падение трафика, уменьшение видимости в поиске</td>
+                    </tr>
+                    <tr>
+                        <td>Эффект на IT</td>
+                        <td>Поддержка стартапов и фрилансеров</td>
+                        <td>Принудительное ограничение, потеря функционала</td>
+                        <td>Стагнация индустрии, отток специалистов</td>
+                    </tr>
+                </tbody>
+            </table>
+
+<iframe class="iframe"
+    style="
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 3/1;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        overflow: hidden;
+
+    "
+    title="График IT-падения 2020-2025"
+    srcdoc='
+<title>График IT-падения 2020-2025</title>
+<style>
+body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .chart-container {
+        width: 100%;
+        max-width: 600px;
+    }
+    svg {
+        width: 100%;
+        height: auto;
+    }
+</style>
+<div class="chart-container">
+    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+
+      <line x1="50" y1="250" x2="450" y2="250" stroke="black" />
+      <line x1="50" y1="250" x2="50" y2="50" stroke="black" />
+
+      <polyline
+        fill="none"
+        stroke="#ff0000"
+        stroke-width="3"
+        points="
+          90,90
+          130,80
+          210,120
+          290,160
+          370,200
+          450,240
+        "
+      />
+
+      <defs>
+        <marker id="arrow-down" markerWidth="12" markerHeight="12" refX="6" refY="3"
+                orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L10,3 z" fill="#ff0000" />
+        </marker>
+      </defs>
+
+      <line
+        x1="370" y1="200"
+        x2="450" y2="240"
+        stroke="#ff0000"
+        stroke-width="3"
+        marker-end="url(#arrow-down)"
+      />
+
+      <text x="250" y="290" text-anchor="middle" font-size="18">2020–2026</text>
+      <text x="-150" y="15" transform="rotate(-90)" text-anchor="middle" font-size="18">IT-падение</text>
+
+    </svg>
+</div>
+'></iframe>
+
+
+            
+<div class="conclusion">
+    <h3>В итоге:</h3>
+    <p>РКН в этом плане выглядит как глупый ребенок, который не понимает последствия, или же это иноагентская деятельность. Что вы думаете об этом? Напишите отзыв:</p>
+</div>
+
+<div id="chat-container">
+    <div id="messages" style="border-radius: 25px; height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; background-color: #f9f9f9; font-size: 14px;"></div>
+
+    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+        <input type="text" id="nickname-input" placeholder="Ваш ник" style="width: 20px;flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        <input type="text" id="message-input" placeholder="ваш отзыв..." style="width: 20px;flex: 2; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    
+    <div style="display: flex; justify-content: flex-end;">
+        <button onclick="sendMessage()" style="padding: 8px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Отправить</button>
+    </div>
+</div>
+
+<script>
+    function sendMessage() {
+        const nicknameInput = document.getElementById('nickname-input');
+        const messageInput = document.getElementById('message-input');
+        const nickname = nicknameInput.value.trim() || 'Аноним';
+        let message = messageInput.value.trim();
+
+        if (!message) {
+            alert('Пожалуйста, напишите отзыв.');
+            return;
+        }
+
+        const linkPattern = /https?:\/\/|www\.|ftp:\/\//i;
+        if (linkPattern.test(message)) {
+            alert('Отзывы с ссылками запрещены.');
+            return;
+        }
+
+        const messagesDiv = document.getElementById('messages');
+        const messageElement = document.createElement('div');
+        messageElement.style.margin = '8px 0';
+        messageElement.style.padding = '8px';
+        messageElement.style.backgroundColor = '#e9ecef';
+        messageElement.style.borderRadius = '6px';
+        messageElement.style.fontWeight = 'normal';
+        messageElement.innerHTML = `<strong>${nickname}</strong>: ${message}`;
+        messagesDiv.appendChild(messageElement);
+        messageInput.value = '';
+        nicknameInput.value = '';
+        const existing = JSON.parse(localStorage.getItem('reviews') || '[]');
+        existing.push({ nickname, message });
+        localStorage.setItem('reviews', JSON.stringify(existing));
+    }
+
+    window.onload = function() {
+        const existing = JSON.parse(localStorage.getItem('reviews') || '[]');
+        const messagesDiv = document.getElementById('messages');
+        existing.forEach(item => {
+            const el = document.createElement('div');
+            el.style.margin = '8px 0';
+            el.style.padding = '8px';
+            el.style.backgroundColor = '#e9ecef';
+            el.style.borderRadius = '6px';
+            el.innerHTML = `<strong>${item.nickname}</strong>: ${item.message}`;
+            messagesDiv.appendChild(el);
+        });
+    };
+</script>
+        </section>
+
+<p id="timestamp">© 2025 11 14 | 20 08 20 Анализ последствий блокировок РКН для российского IT-сектора по данным ai</p>
+
+<script>
+  function updateTimestamp() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    document.getElementById('timestamp').innerText = 
+      `© ${year} ${month} ${day} | ${hours} ${minutes} ${seconds} Анализ последствий блокировок РКН для российского IT-сектора по данным ai Все права защищены.`;
+  }
+
+  updateTimestamp();
+
+  setInterval(updateTimestamp, 1000);
+</script>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
