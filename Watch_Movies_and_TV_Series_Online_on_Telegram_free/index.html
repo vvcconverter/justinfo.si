@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmMore Bot - Смотреть фильмы и сериалы онлайн в Телеге.</title>
+     <meta name="keywords" content="information, news, articles, useful materials, current data">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://justinfo.si/Watch_Movies_and_TV_Series_Online_on_Telegram_free/index.html">
+    <link rel="alternate" hreflang="en" href="https://www.justinfo.si">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/icons/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="640x360" href="/6b2d4b8fe942154cb7c3d8ce5b64cac2ba1ca2a73d29705a96c155b82d51f85e96e8930550e93548226cfc08981ede90_large.jpg">
+ 
+    <link rel="mask-icon" href="/icons/favicon.svg" color="#000000">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <meta name="theme-color" content="#1a73e8">
+    <title>JustInfo - Information Portal</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JustInfo - Information Portal">
+    <meta property="og:description" content="Current news and useful information on one site.">
+    <meta property="og:url" content="https://justinfo.si">
+    <meta property="og:site_name" content="JustInfo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JustInfo - Information Portal">
+    <meta name="twitter:description" content="Current news and useful information.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как начать пользоваться ботом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для начала использования просто перейдите по ссылке https://t.me/filmmore_bot и нажмите кнопку 'Start' или 'Запустить'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие фильмы и сериалы доступны в боте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В нашем боте представлена обширная коллекция фильмов и сериалов различных жанров, годов выпуска и стран производства. Вы можете найти как новинки, так и классику кинематографа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли платить за использование бота?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, наш бот полностью бесплатен. Вы можете смотреть фильмы и сериалы без каких-либо платежей или подписок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как искать контент в боте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для поиска используйте команду /search или просто введите название фильма или сериала в чат с ботом. Также доступен поиск по жанрам, годам и другим параметрам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Доступен ли бот на мобильных устройствах?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, бот полностью адаптирован для использования как на компьютерах, так и на мобильных устройствах через приложение Telegram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если видео не воспроизводится?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если возникли проблемы с воспроизведением, попробуйте перезагрузить страницу или проверить подключение к интернету. Если проблема сохраняется, свяжитесь с нашей технической поддержкой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как часто обновляется каталог?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Мы регулярно пополняем нашу коллекцию новыми фильмами и сериалами. Новые релизы обычно появляются в течение нескольких дней после официального выхода."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли скачивать контент для офлайн-просмотра?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "К сожалению, функция скачивания контента для офлайн-просмотра в настоящее время недоступна. Все материалы доступны только для онлайн-просмотра."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --primary-color: #0066ff;
+            --primary-light: #e6f0ff;
+            --text-color: #1d1d1f;
+            --text-secondary: #86868b;
+            --background: #ffffff;
+            --surface: #f5f5f7;
+            --border: #d2d2d7;
+            --radius-small: 12px;
+            --radius-medium: 20px;
+            --radius-large: 30px;
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(0, 102, 255, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 102, 255, 0.03) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: var(--radius-large);
+            box-shadow: var(--shadow);
+            margin: 0 auto 40px;
+            display: block;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            border-radius: var(--radius-large);
+        }
+        
+        .hero-image:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #1d1d1f 0%, #0066ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--primary-color);
+            color: white;
+            padding: 18px 36px;
+            border-radius: var(--radius-medium);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(0, 102, 255, 0.3);
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 102, 255, 0.4);
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 80px 0;
+        }
+        
+        .feature-card {
+            background: var(--surface);
+            border-radius: var(--radius-medium);
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), #a2c6ff);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--border);
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            color: var(--primary-color);
+            display: inline-block;
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        .feature-desc {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        
+        .faq-section {
+            background: var(--surface);
+            border-radius: var(--radius-large);
+            padding: 60px 40px;
+            margin: 80px 0;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 102, 255, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .faq-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            position: relative;
+        }
+        
+        .faq-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), #a2c6ff);
+            border-radius: 2px;
+        }
+        
+        .faq-item {
+            margin-bottom: 16px;
+            border-radius: var(--radius-small);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 24px;
+            background: var(--background);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: var(--primary-light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: var(--transition);
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            padding: 0 24px;
+            background: var(--background);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 24px 24px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding: 40px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-section {
+                padding: 40px 20px;
+            }
+            
+            .faq-question {
+                font-size: 1.1rem;
+                padding: 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 1000;
+        }
+        
+        .progress-bar {
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), #a2c6ff);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <img src="https://otvet.cdn-vk.net/api/pictures/images/6b2d4b8fe942154cb7c3d8ce5b64cac2ba1ca2a73d29705a96c155b82d51f85e96e8930550e93548226cfc08981ede90_large.jpg" alt="FilmMore Bot - Смотреть фильмы и сериалы онлайн" class="hero-image fade-in">
+            <h1 class="fade-in">Смотреть фильмы и сериалы онлайн</h1>
+            <p class="subtitle fade-in">Добро пожаловать в FilmMore Bot — ваш персональный кинотеатр в Telegram. Смотрите тысячи фильмов и сериалов в премиальном качестве прямо в мессенджере.(рекомендуем установить блокировщик рекламы чтобы ВАС ничего не отвлекало от бесплатных ТОП 2025г 2026г новинок КИНО Сериалов и Мультфильмов как аниме, так и 2D — 3D хватает на любой вкус и возраст!).</p>
+            <a href="https://t.me/filmmore_bot" class="cta-button fade-in">
+                <i class="fab fa-telegram"></i>
+                Go Telegram
+            </a>
+        </header>
+        
+        <section class="features">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎬</div>
+                <h3 class="feature-title">Беспрецедентная коллекция</h3>
+                <p class="feature-desc">Тысячи фильмов и сериалов на любой вкус — от культовой классики до эксклюзивных премьер.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Интеллектуальный поиск</h3>
+                <p class="feature-desc">Умная система рекомендаций и поиска, которая понимает ваши предпочтения.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🚀</div>
+                <h3 class="feature-title">Мгновенный доступ</h3>
+                <p class="feature-desc">Начинайте просмотр сразу после выбора — никаких ожиданий и буферизации.</p>
+            </div>
+        </section>
+        
+        <section class="faq-section">
+            <h2 class="faq-title fade-in">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Как начать пользоваться ботом?</div>
+                <div class="faq-answer">
+                    Для начала использования просто перейдите по ссылке https://t.me/filmmore_bot и нажмите кнопку 'Смотреть КИНО'.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Какие фильмы и сериалы доступны в боте?</div>
+                <div class="faq-answer">
+                    В нашем боте представлена обширная коллекция фильмов и сериалов различных жанров, годов выпуска и стран производства. Вы можете найти как новинки, так и классику кинематографа.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Нужно ли платить за использование бота?</div>
+                <div class="faq-answer">
+                    Нет, наш бот полностью бесплатен. Вы можете смотреть фильмы и сериалы без каких-либо платежей или подписок.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Как искать контент в боте?</div>
+                <div class="faq-answer">
+                    Запустите бот на кнопку Смотреть КИНО выберите 🔍️ search или просто введите название фильма или сериала в поиск. Также доступен поиск по жанрам, годам и другим параметрам.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Доступен ли бот на мобильных устройствах?</div>
+                <div class="faq-answer">
+                    Да, бот полностью адаптирован для использования как на компьютерах, так и на мобильных устройствах через приложение Telegram.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Что делать, если видео не воспроизводится?</div>
+                <div class="faq-answer">
+                    Если возникли проблемы с воспроизведением, попробуйте перезагрузить страницу или проверить подключение к интернету. Если проблема сохраняется, свяжитесь с нашей технической поддержкой.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Как часто обновляется каталог?</div>
+                <div class="faq-answer">
+                    Мы регулярно пополняем нашу коллекцию новыми фильмами и сериалами. Новые релизы обычно появляются в течение нескольких дней после официального выхода.
+                </div>
+            </div>
+            
+            <div class="faq-item fade-in">
+                <div class="faq-question">Можно ли скачивать контент для офлайн-просмотра?</div>
+                <div class="faq-answer">
+                    К сожалению, функция скачивания контента для офлайн-просмотра в настоящее время недоступна. Все материалы доступны только для онлайн-просмотра.
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-links">
+                <a href="index.htm#privacy-policy" class="footer-link">Политика конфиденциальности</a>
+                <a href="index.htm#terms-of-use" class="footer-link">Условия использования</a>
+                <a href="index.htm#support" class="footer-link">Поддержка</a>
+            </div>
+            <p>© 2025 FilmMore Bot. Все права защищены.</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };            
+            const progressBar = document.getElementById('progressBar');
+            const updateProgressBar = function() {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const progress = (scrollTop / documentHeight) * 100;
+                progressBar.style.width = progress + '%';
+            };
+            const faqItems = document.querySelectorAll('.faq-item');            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');   
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+            window.addEventListener('scroll', () => {
+                fadeInOnScroll();
+                updateProgressBar();
+            });
+            fadeInOnScroll();
+        });
+    </script>
+</body>
+</html>
