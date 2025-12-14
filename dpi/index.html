@@ -747,6 +747,39 @@ observer.observe(section);
 });
 });
 </script>
+ <script>
+if ('serviceWorker' in navigator){
+window.addEventListener('load', function (){
+navigator.serviceWorker.register('sw.js?v=3').then(function (registration){
+console.log('Yes', registration.scope);
+}).catch(function (error){
+console.log('No', error);
+navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).catch(err=>console.log('Yes-two', err));
+});
+});
+}
+</script>
+          <script>function cachePage() {
+    const url = 'https://www.justinfo.si/dpi/index.html';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>      
 </body>
 </html>
+
 
