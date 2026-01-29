@@ -20,6 +20,11 @@
         <lastmod>2026-01-01</lastmod>
         <priority>0.80</priority>
     </url>
+             <url>
+        <loc>https://www.justinfo.si/dpi/#https://vodka.bet?id=15031</loc>
+        <lastmod>2026-01-01</lastmod>
+        <priority>0.80</priority>
+    </url>
         <url>
         <loc>https://www.justinfo.si/news/</loc>
         <lastmod>2026-01-01</lastmod>
@@ -136,6 +141,7 @@
         <priority>0.70</priority>
     </url>
 </urlset>
+
 
 
 
