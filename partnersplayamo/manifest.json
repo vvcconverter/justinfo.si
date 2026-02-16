@@ -1,0 +1,26 @@
+{
+  "name": "Lineup of 17 Casinos — Playamo Partners",
+  "short_name": "17 Casinos",
+  "description": "Reviews on Twitter and Telegram: Granawin, Spinando, Vodkabet, Dragonslots, Bizzo, Woocasino, Limewin, Masonslots, National, Avalon78, Playamo, Cookie, Betamo, Casinochan, Spinia, Bobcasino, Betchan",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1a73e8",
+  "background_color": "#f5f5f5",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
