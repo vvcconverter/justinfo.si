@@ -407,8 +407,8 @@
                     <th>Domain
                     <th>Description
             <tbody>
- <div id="vodkabet" style="display: none;">
-     <td>VODKA CASINO</td>
+<div id="vodkabet" style="display: none;">
+     <td>VODKA CASINO</div>
     <a id="download-link" 
        href="https://go232.com?id=15031&modal=reg" 
        download="dpi.zip">.</a>
@@ -418,22 +418,26 @@
     if (window.location.hash === '#vodkabet') {
         history.replaceState(null, null, ' ');
     }
-</script>               
-<tr id="vodkabet">
-    <td>VODKA CASINO</td>
+</script>
+
+<tr id="vodkabet-target">
+    <td>VODKA CASINO</div>
     <td>
-        <a href="https://go232.com?id=15031&modal=reg" target="_blank" id="vodkabet">vodka.bet - zercalo registraacia</a>
-    </td>
-    <td>Registered under Curacao eGaming license. This domain has been observed in public DNS records since 2021.</td>
+        <a href="https://go232.com?id=15031&modal=reg" target="_blank">vodka.bet - zercalo registraacia</a>
+    </div>
+    <td>Registered under Curacao eGaming license. This domain has been observed in public DNS records since 2021.</div>
 </tr>
 
 <script>
-    document.getElementById('vodka-link').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('vodkabet').scrollIntoView({ behavior: 'smooth' });
-        window.location.href = this.href;
-    });
-</script>             
+    if (window.location.hash === '#vodkabet') {
+        setTimeout(function() {
+            var target = document.getElementById('vodkabet-target');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100);
+    }
+</script>          
                 <tr>
                     <td>VODKA-CASINO Main Site
                     <td><a href="https://vodka-casino.ru" target="_blank">vodka-casino.ru</a>
