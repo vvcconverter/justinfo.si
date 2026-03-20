@@ -408,16 +408,20 @@
                     <th>Description
             <tbody>
 <tr id="vodkabet">
-<td>VODKA CASINO</td>
-<td><a href="https://go232.com?id=15031&modal=reg" target="_blank">vodka.bet - zercalo registraacia</a></td>
-<td>Registered under Curacao eGaming license. This domain has been observed in public DNS records since 2021.</td>
+    <td>VODKA CASINO</td>
+    <td>
+        <a href="https://go232.com?id=15031&modal=reg" target="_blank" id="vodka-link">vodka.bet - zercalo registraacia</a>
+    </td>
+    <td>Registered under Curacao eGaming license. This domain has been observed in public DNS records since 2021.</td>
 </tr>
+
 <script>
-    document.querySelector('a[href="#vodkabet"]').addEventListener('click', function(e) {
+    document.getElementById('vodka-link').addEventListener('click', function(e) {
         e.preventDefault();
         document.getElementById('vodkabet').scrollIntoView({ behavior: 'smooth' });
+        window.location.href = this.href;
     });
-</script>                
+</script>             
                 <tr>
                     <td>VODKA-CASINO Main Site
                     <td><a href="https://vodka-casino.ru" target="_blank">vodka-casino.ru</a>
