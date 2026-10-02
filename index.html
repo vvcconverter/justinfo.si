@@ -1,419 +1,857 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="ru" translate="yes">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXV6MNLT3W"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-PXV6MNLT3W');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TSC799L3');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="refresh" content="0; url=https://www.twitch.tv/vodka_bet">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="description" content="Justinfo - vaš vodič po Dialogu z informacijami o različnih temah in povezavami do izdelkov">
-    <meta name="keywords" content="Justinfo, Dialog, vodič, informacije, spletna stran">
-    <meta name="author" content="Justinfo">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/web-app-manifest-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="icons/web-app-manifest-512x512.png">
-    <title>Justinfo - Vaš vodič po Dialogu</title>
-    <link rel="canonical" href="https://www.justinfo.si/" />
-    <link rel="alternate" href="https://justinfo.si/" />
-    <link rel="alternate" href="http://justinfo.si" />
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --light-bg: #f8f9fa;
-            --white-block: #ffffff;
-            --text-primary: #2c3e50;
-            --text-secondary: #7f8c8d;
-            --shadow: 0 2px 10px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--light-bg);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--white-block);
-            box-shadow: var(--shadow);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            transition: var(--transition);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            animation: fadeInDown 0.8s ease;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: var(--text-primary);
-            font-weight: 500;
-            transition: var(--transition);
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-        }
-        
-        nav a:hover {
-            background-color: rgba(52, 152, 219, 0.1);
-            color: var(--secondary-color);
-        }
-        
-        /* Main content */
-        main {
-            flex: 1;
-            padding: 3rem 0;
-        }
-        
-        .hero {
-            text-align: center;
-            margin-bottom: 3rem;
-            animation: fadeInUp 1s ease;
-        }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .card {
-            background-color: var(--white-block);
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            animation: slideUp 0.6s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        .card h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        
-        .card p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-        
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .product-card {
-            background-color: var(--white-block);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-decoration: none;
-            color: var(--text-primary);
-            border: 2px solid transparent;
-        }
-        
-        .product-card:hover {
-            border-color: var(--secondary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        .product-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        
-        .product-card p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: auto;
-        }
-        
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-            
-            .hero h2 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-        
-        /* Loading animation */
-        .loading {
-            opacity: 0;
-            animation: fadeIn 0.5s ease 0.2s forwards;
-        }
-        
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXV6MNLT3W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PXV6MNLT3W');
+  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TSC799L3');</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="content-language" content="ru">
+  <meta name="google" content="translate">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yandex" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="description" content="Водка Бет (Vodka Bet) — актуальный вход на Водка Казино. Рабочее зеркало Водка Бет, стрим на Twitch, бонусы и быстрый доступ без блокировок.">
+  <meta name="keywords" content="водка казино, водка бет, зеркало водка бет, vodka bet, vodka casino, водка бет официальный">
+  <meta name="author" content="Vodka Bet">
+  <meta name="theme-color" content="#120e0c">
+  <title>Vodka Bet</title>
+
+  <link rel="canonical" href="https://www.justinfo.si/" />
+  <link rel="alternate" href="https://justinfo.si/" />
+  <link rel="alternate" href="http://justinfo.si" />
+
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Водка Бет — зеркало Водка Казино | Vodka Bet">
+  <meta property="og:description" content="Водка Бет, Водка Казино и рабочее зеркало Водка Бет. Стрим на Twitch и быстрый вход.">
+  <meta property="og:url" content="https://www.twitch.tv/vodka_bet/about">
+  <meta property="og:image" content="https://www.justinfo.si/vodkabet.avif">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Водка Бет — Водка Казино | Зеркало Водка Бет">
+  <meta name="twitter:description" content="Актуальное зеркало Водка Бет и вход в Водка Казино. Twitch: vodka_bet.">
+  <meta name="twitter:image" content="https://www.justinfo.si/vodkabet.avif">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Водка Бет",
+    "alternateName": ["Vodka Bet", "Водка Казино", "Зеркало Водка Бет"],
+    "inLanguage": "ru",
+    "description": "Водка Бет — вход и зеркало Водка Казино. Официальный Twitch канала vodka_bet.",
+    "url": "https://www.justinfo.si/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.justinfo.si/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": ["https://www.twitch.tv/vodka_bet/about"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #120e0c;
+      --ink-2: #1c1612;
+      --panel: rgba(255, 248, 238, 0.04);
+      --ivory: #f7efe3;
+      --muted: rgba(247, 239, 227, 0.68);
+      --gold: #d8b07a;
+      --gold-bright: #f0d2a0;
+      --gold-deep: #a67a45;
+      --line: rgba(216, 176, 122, 0.28);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Manrope", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: var(--font-body);
+      color: var(--ivory);
+      background-color: var(--ink);
+      background-image:
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(216, 176, 122, 0.18), transparent 55%),
+        radial-gradient(ellipse 50% 40% at 100% 30%, rgba(166, 122, 69, 0.12), transparent 50%),
+        linear-gradient(180deg, #0c0908 0%, var(--ink) 35%, #18120e 100%);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.07;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    body > * { position: relative; z-index: 1; }
+
+    a { color: inherit; text-decoration: none; }
+
+    .shell {
+      width: min(1100px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: rgba(18, 14, 12, 0.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-size: clamp(1.45rem, 3vw, 1.85rem);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand span { color: var(--gold); }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem 1.1rem;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.25s ease;
+    }
+
+    .nav a:hover { color: var(--gold-bright); }
+
+    .translate-box {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .translate-box select {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--ink-2);
+      color: var(--ivory);
+      border-radius: 8px;
+      padding: 0.4rem 0.7rem;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(92vh, 900px);
+      display: grid;
+      grid-template-columns: 1fr;
+      align-content: end;
+      gap: 2rem;
+      padding: clamp(3rem, 9vw, 6rem) 0 3rem;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 18% 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0.55;
+      z-index: -1;
+      animation: shimmer 4.5s ease-in-out infinite;
+    }
+
+    .hero-copy {
+      max-width: 34rem;
+      animation: rise 0.85s ease both;
+    }
+
+    .hero-brand {
+      font-family: var(--font-display);
+      font-size: clamp(3.4rem, 11vw, 6.4rem);
+      line-height: 0.88;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.1rem;
+      text-transform: uppercase;
+    }
+
+    .hero-brand em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.45rem, 3.2vw, 2.05rem);
+      font-weight: 600;
+      line-height: 1.15;
+      max-width: 16ch;
+      margin-bottom: 0.85rem;
+      color: var(--ivory);
+    }
+
+    .hero-copy > p {
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.12rem);
+      margin-bottom: 1.7rem;
+      max-width: 34ch;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.85rem 1.35rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:active { transform: scale(0.98); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
+      color: #1a120a;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ffe0b0, var(--gold));
+    }
+
+    .btn-ghost {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ivory);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--gold);
+      color: var(--gold-bright);
+    }
+
+    .hero .media-frame {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      border-radius: 14px;
+      animation: rise 1s ease 0.12s both;
+    }
+
+    .section {
+      padding: clamp(2.4rem, 6vw, 4.2rem) 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3.8vw, 2.35rem);
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      max-width: 18ch;
+      color: var(--gold-bright);
+    }
+
+    .section p {
+      color: var(--muted);
+      max-width: 58ch;
+      font-size: 1.04rem;
+    }
+
+    .section a.inline {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+
+    .media-block {
+      padding: 0;
+      border: 0;
+    }
+
+    .media-frame {
+      position: relative;
+      display: block;
+      max-width: 720px;
+      margin: 0 auto;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #000;
+      aspect-ratio: 16 / 9;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .media-frame video,
+    .media-frame .media-poster,
+    .media-frame .media-poster-link,
+    .media-frame .media-video-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+
+    .media-frame .media-poster-link,
+    .media-frame .media-video-link {
+      position: absolute;
+      inset: 0;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+    }
+
+    .media-frame .media-video-link { z-index: 0; }
+
+    .media-frame .media-poster-link {
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .media-frame .media-poster {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      cursor: pointer;
+    }
+
+    .media-frame.is-playing .media-poster-link,
+    .media-frame.is-playing .media-play {
+      display: none;
+    }
+
+    .media-frame.is-playing .media-video-link { z-index: 2; }
+
+    .media-frame.is-playing video {
+      object-fit: contain;
+      background: #000;
+    }
+
+    .media-play {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 76px;
+      height: 76px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      cursor: pointer;
+      background: rgba(18, 14, 12, 0.72);
+      z-index: 2;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .media-play:hover {
+      transform: scale(1.05);
+      background: rgba(18, 14, 12, 0.88);
+    }
+
+    .media-play::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 54%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 0 12px 20px;
+      border-color: transparent transparent transparent var(--gold-bright);
+      transform: translate(-50%, -50%);
+    }
+
+    .seo-tags {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    .faq details {
+      border-top: 1px solid var(--line);
+      padding: 1rem 0;
+    }
+
+    .faq details:last-child { border-bottom: 1px solid var(--line); }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      list-style: none;
+      color: var(--ivory);
+    }
+
+    .faq summary::-webkit-details-marker { display: none; }
+
+    .faq p {
+      margin-top: 0.55rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 2.2rem 0 calc(2.2rem + var(--safe-bottom));
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.35));
+    }
+
+    footer .foot-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 2rem 0;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.25; transform: scaleX(0.7); }
+      50% { opacity: 0.7; transform: scaleX(1); }
+    }
+
+    @media (max-width: 720px) {
+      .shell { width: min(1100px, calc(100% - 1.25rem)); }
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav { justify-content: flex-start; }
+      .hero { min-height: auto; padding-top: 2.5rem; }
+      .cta-row { width: 100%; }
+      .btn { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
-<body class="loading">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSC799L3"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Dobrodošli na Justinfo</h1>
-                <nav>
-                    <ul>
-                        <li><a href="vod-ka.bet/justinfo.html">O projektu</a></li>
-                        <li><a href="#products">Izdelki</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSC799L3"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <script type="application/json" id="page-data">
+  {
+    "site": {
+      "lang": "ru",
+      "brand": "Vodka Bet",
+      "title": "Водка Бет — официальное зеркало Водка Казино | Vodka Bet",
+      "description": "Водка Бет (Vodka Bet) — актуальный вход на Водка Казино. Рабочее зеркало Водка Бет, стрим на Twitch, бонусы и быстрый доступ без блокировок.",
+      "keywords": ["водка казино", "водка бет", "зеркало водка бет", "vodka bet", "vodka casino", "водка бет официальный"],
+      "author": "Vodka Bet",
+      "twitch": "https://www.twitch.tv/vodka_bet/about",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "translate": "yes"
+    },
+    "nav": [
+      { "label": "О бренде", "href": "index.html?id=водка бет" },
+      { "label": "Зеркало", "href": "index.html?id=зеркало водка бет" },
+      { "label": "Водка Казино", "href": "index.html?id=водка казино" },
+      { "label": "Twitch", "href": "https://www.twitch.tv/vodka_bet/about", "external": true }
+    ],
+    "hero": {
+      "brand": "Vodka Bet",
+      "headline": "Водка Бет — вход в Водка Казино",
+      "text": "Актуальное зеркало Водка Бет, стримы и быстрый доступ к Водка Казино без лишних шагов.",
+      "ctaPrimary": { "label": "Twitch Водка Бет", "href": "https://www.twitch.tv/vodka_bet/about" },
+      "ctaSecondary": { "label": "Зеркало Водка Бет", "href": "index.html?id=зеркало водка бет" }
+    },
+    "media": {
+      "videoSrc": "водка-бет.webm",
+      "videoHref": "https://www.justinfo.si/index.html?id=vodka-bet-video",
+      "pictureSrc": "vodkabet.avif",
+      "pictureHref": "https://www.justinfo.si/index.html?id=vodka-bet-picture"
+    },
+    "sections": [
+      { "id": "about", "title": "Что такое Водка Бет", "text": "Водка Бет — бренд и точка входа в экосистему Водка Казино: стримы, новости и рабочее зеркало Водка Бет. Здесь собраны ключевые ссылки, чтобы быстро найти Vodka Bet и актуальный доступ." },
+      { "id": "mirror", "title": "Зеркало Водка Бет", "text": "Зеркало Водка Бет помогает открыть сайт, если основной адрес временно недоступен. Используйте проверенное зеркало Водка Бет, чтобы сохранить вход в Водка Казино и не терять прогресс." },
+      { "id": "casino", "title": "Водка Казино", "text": "Водка Казино — игровая площадка бренда Водка Бет: слоты, live и акции. Следите за обновлениями зеркала Водка Бет и стримами, чтобы всегда знать рабочий вход." },
+      { "id": "twitch", "title": "Стрим на Twitch", "text": "Официальная страница Водка Бет на Twitch — анонсы, стримы и общение с аудиторией. Переходите на about-страницу канала и подписывайтесь.", "link": { "label": "vodka bet", "href": "https://www.twitch.tv/vodka_bet/about" } }
+    ],
+    "faq": [
+      { "q": "Что такое зеркало Водка Бет?", "a": "Зеркало Водка Бет — резервный адрес для входа в Водка Казино, когда основной домен недоступен." },
+      { "q": "Где смотреть стримы Водка Бет?", "a": "Стримы Водка Бет доступны на Twitch: https://www.twitch.tv/vodka_bet/about" },
+      { "q": "Как найти Водка Казино?", "a": "Ищите по запросам «водка казино», «водка бет» и «зеркало водка бет» — на этой странице собраны актуальные ориентиры." }
+    ],
+    "footer": {
+      "text": "Водка Бет · Водка Казино · Зеркало Водка Бет. Контент информационный. Играйте ответственно 18+.",
+      "twitchLabel": "Twitch Водка Бет",
+      "twitchHref": "https://www.twitch.tv/vodka_bet/about"
+    }
+  }
+  </script>
+
+  <div id="app">
+    <p class="shell status">Загрузка страницы Водка Бет…</p>
+  </div>
+
+  <noscript>
+    <div class="shell">
+      <header class="top"><div class="top-inner"><strong class="brand">Vodka <span>Bet</span></strong></div></header>
+      <section class="hero">
+        <p class="hero-brand">Vodka <em>Bet</em></p>
+        <h1>Водка Бет — вход в Водка Казино</h1>
+        <p>Актуальное зеркало Водка Бет и быстрый доступ к Водка Казино. Смотрите стримы на Twitch.</p>
+        <p><a class="btn btn-primary" href="https://www.twitch.tv/vodka_bet/about">Twitch Водка Бет</a></p>
+      </section>
+      <section class="section">
+        <h2>Зеркало Водка Бет</h2>
+        <p>Зеркало Водка Бет — резервный вход в Водка Казино.</p>
+      </section>
+      <div class="media-block">
+        <div class="media-frame">
+          <a class="media-video-link" href="https://www.justinfo.si/index.html?id=vodka-bet-video">
+            <video controls playsinline preload="none"></video>
+          </a>
+          <a class="media-poster-link" href="https://www.justinfo.si/index.html?id=vodka-bet-picture">
+            <img class="media-poster" src="vodkabet.avif" alt="Водка Бет" width="1280" height="720" loading="lazy">
+          </a>
         </div>
-    </header>
-    
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Vaš vodič po Dialogu</h2>
-                <p>Poznavajte informacije o različnih temah in odkrijte naše izdelke za boljši spletni izkušnje</p>
-            </section>
-            
-            <section id="about" class="content-grid">
-                <article class="card">
-                    <h2>O projektu</h2>
-                    <p>Ta spletna stran je vodič po Dialogu, ki vsebuje informacije o različnih temah in ponuja povezave do naših izdelkov.</p>
-                    <p>Naš cilj je zagotoviti jasen in enostaven dostop do pomembnih informacij in orodij, ki vam lahko pomagajo pri vsakodnevnih nalogah.</p>
-                </article>
-                
-                <article class="card">
-                    <h2>Najnovejše informacije</h2>
-                    <p>Spremljajte najnovejše posodobitve in informacije o naših izdelkih. Redno posodabljamo vsebine, da vam zagotovimo najboljše izkušnje.</p>
-                    <p>Vsebina je pripravljena z namenom, da bo uporabna, informativna in enostavna za razumevanje.</p>
-                </article>
-            </section>
-            
-            <section id="products">
-                <div class="container">
-                    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color); font-size: 2rem; font-weight: 600;">Naši izdelki</h2>
-                    <div class="products-grid">
-                        <a href="https://www.justinfo.si/Arhiv/" class="product-card">
-                            <h3>Live God</h3>
-                            <p>Pridobivanje informacij v realnem času</p>
-                        </a>
-                        
-                        <a href="https://www.justinfo.si/vvc-converter/" class="product-card">
-                            <h3>VVC Converter</h3>
-                            <p>Orodje za pretvorbo video formatov</p>
-                        </a>
-                        
-                        <a href="https://www.justinfo.si/rkn-block-site/" class="product-card">
-                            <h3>RKN Block Site</h3>
-                            <p>Rešitev za blokado spletnih strani</p>
-                        </a>
-                        
-                        <a href="https://www.justinfo.si/info.html" class="product-card">
-                            <h3>Info News</h3>
-                            <p>Najnovejše novice in informacije</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>© 2026 Justinfo - Vaš vodič po Dialogu. Vse pravice pridržane.</p>
-        </div>
-    </footer>
-    
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
+      </div>
+      <div class="seo-tags" aria-hidden="true">
+        <a href="https://www.justinfo.si/index.html?id=vodka-bet-video" rel="tag">vodka-bet-video</a>
+        <a href="https://www.justinfo.si/index.html?id=vodka-bet-picture" rel="tag">vodka-bet-picture</a>
+        <a href="index.html?id=vodka%20casino" rel="tag">vodka casino</a>
+        <a href="index.html?id=%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0%20%D0%BA%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE" rel="tag">водка казино</a>
+        <a href="index.html?id=%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0%20%D0%B1%D0%B5%D1%82" rel="tag">водка бет</a>
+        <a href="index.html?id=%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D0%BE%20%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0%20%D0%B1%D0%B5%D1%82" rel="tag">зеркало водка бет</a>
+        <a href="index.html?id=vodka%20bet" rel="tag">vodka bet</a>
+        <a href="index.html?id=%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0%20%D0%B1%D0%B5%D1%82%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9" rel="tag">водка бет официальный</a>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="tags.js"></script>
+  <script>
+    (function () {
+      const app = document.getElementById("app");
+      const PT = window.PageTags;
+
+      function el(tag, attrs, children) {
+        const node = document.createElement(tag);
+        if (attrs) {
+          Object.entries(attrs).forEach(([k, v]) => {
+            if (k === "className") node.className = v;
+            else if (k === "text") node.textContent = v;
+            else if (k === "html") node.innerHTML = v;
+            else if (v != null) node.setAttribute(k, v);
+          });
+        }
+        (children || []).forEach((c) => {
+          if (c == null) return;
+          node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
         });
-        
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+        return node;
+      }
+
+      function applyMeta(site) {
+        document.title = site.title || document.title;
+        document.documentElement.lang = site.lang || "ru";
+        document.documentElement.setAttribute("translate", site.translate || "yes");
+        const map = {
+          description: site.description,
+          keywords: (site.keywords || []).join(", "),
+          author: site.author,
+          robots: site.robots
         };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-        
-        // Observe cards for scroll animations
-        document.querySelectorAll('.card, .product-card').forEach(card => {
-            observer.observe(card);
+        Object.entries(map).forEach(([name, content]) => {
+          if (!content) return;
+          let m = document.querySelector(`meta[name="${name}"]`);
+          if (!m) {
+            m = document.createElement("meta");
+            m.setAttribute("name", name);
+            document.head.appendChild(m);
+          }
+          m.setAttribute("content", content);
         });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-                header.style.background = '#ffffff';
-            }
+      }
+
+      function openTranslate(lang) {
+        if (!lang || lang === "ru") return;
+        const url = "https://translate.google.com/translate?hl=" + encodeURIComponent(lang) +
+          "&sl=ru&tl=" + encodeURIComponent(lang) + "&u=" + encodeURIComponent(location.href);
+        window.open(url, "_blank", "noopener,noreferrer");
+      }
+
+      function render(data) {
+        const site = data.site || {};
+        const hero = data.hero || {};
+        applyMeta(site);
+
+        if (PT) {
+          PT.mergePageTags(data);
+        }
+        const activeId = PT ? PT.getIdFromUrl() : "";
+        if (PT) PT.applyActiveTag(activeId);
+
+        const nav = el("nav", { className: "nav", "aria-label": "Навигация" },
+          (data.nav || []).map((item) =>
+            el("a", {
+              href: item.href,
+              target: item.external ? "_blank" : null,
+              rel: item.external ? "noopener noreferrer" : null,
+              text: item.label
+            })
+          )
+        );
+
+        const translate = el("label", { className: "translate-box" }, [
+          document.createTextNode("Перевод"),
+          el("select", { "aria-label": "Перевести страницу", id: "lang-select" }, [
+            el("option", { value: "ru", text: "RU" }),
+            el("option", { value: "en", text: "EN" }),
+            el("option", { value: "uk", text: "UK" }),
+            el("option", { value: "de", text: "DE" }),
+            el("option", { value: "es", text: "ES" }),
+            el("option", { value: "tr", text: "TR" })
+          ])
+        ]);
+
+        const header = el("header", { className: "top" }, [
+          el("div", { className: "shell top-inner" }, [
+            el("a", { href: "index.html?id=vodka bet", className: "brand", html: 'Vodka <span>Bet</span>' }),
+            nav,
+            translate
+          ])
+        ]);
+
+        const media = data.media || {};
+        const pictureSrc = media.pictureSrc || "vodkabet.avif";
+        const videoSrc = media.videoSrc || "водка-бет.webm";
+        const pictureHref = media.pictureHref || "https://www.justinfo.si/index.html?id=vodka-bet-picture";
+        const videoHref = media.videoHref || "https://www.justinfo.si/index.html?id=vodka-bet-video";
+
+        const frame = el("div", { className: "media-frame" });
+        const poster = el("img", {
+          className: "media-poster",
+          src: pictureSrc,
+          alt: "Водка Бет",
+          width: "1280",
+          height: "720",
+          loading: "lazy"
         });
-    </script>
+        const posterLink = el("a", {
+          className: "media-poster-link",
+          href: pictureHref
+        }, [poster]);
+        const playBtn = el("button", {
+          className: "media-play",
+          type: "button",
+          "aria-label": "Смотреть"
+        });
+        const videoEl = el("video", {
+          controls: "controls",
+          playsinline: "playsinline",
+          preload: "none"
+        });
+        const videoLink = el("a", {
+          className: "media-video-link",
+          href: videoHref
+        }, [videoEl]);
+
+        function startVideo(e) {
+          if (e) e.preventDefault();
+          if (frame.classList.contains("is-playing")) return;
+          videoEl.src = videoSrc;
+          frame.classList.add("is-playing");
+          videoEl.play().catch(function () {});
+        }
+
+        playBtn.addEventListener("click", startVideo);
+        posterLink.addEventListener("click", startVideo);
+        videoLink.addEventListener("click", function (e) { e.preventDefault(); });
+        frame.appendChild(videoLink);
+        frame.appendChild(posterLink);
+        frame.appendChild(playBtn);
+
+        const heroNode = el("section", { className: "hero shell", id: "top" }, [
+          el("div", { className: "hero-copy" }, [
+            el("p", { className: "hero-brand", html: 'Vodka <em>Bet</em>' }),
+            el("h1", { text: activeId ? (PT.findTag(activeId) || activeId) : (hero.headline || "Водка Бет") }),
+            el("p", { text: hero.text || "" }),
+            el("div", { className: "cta-row" }, [
+              hero.ctaPrimary ? el("a", {
+                className: "btn btn-primary",
+                href: hero.ctaPrimary.href,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                text: hero.ctaPrimary.label
+              }) : null,
+              hero.ctaSecondary ? el("a", {
+                className: "btn btn-ghost",
+                href: hero.ctaSecondary.href,
+                text: hero.ctaSecondary.label
+              }) : null
+            ])
+          ]),
+          frame
+        ]);
+
+        const sections = (data.sections || []).map((s) => {
+          const kids = [
+            el("h2", { text: s.title }),
+            el("p", { text: s.text })
+          ];
+          if (s.link) {
+            kids.push(el("p", null, [
+              el("a", {
+                className: "inline",
+                href: s.link.href,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                text: s.link.label
+              })
+            ]));
+          }
+          return el("section", { className: "section shell", id: s.id }, kids);
+        });
+
+        const tagsSection = el("div", { id: "tags" });
+        if (PT) PT.renderTagsCloud(tagsSection);
+
+        const faqItems = (data.faq || []).map((f) => {
+          const d = el("details");
+          d.appendChild(el("summary", { text: f.q }));
+          d.appendChild(el("p", { text: f.a }));
+          return d;
+        });
+
+        const faq = el("section", { className: "section shell faq", id: "faq" }, [
+          el("h2", { text: "Частые вопросы про Водка Бет" }),
+          el("div", null, faqItems)
+        ]);
+
+        const foot = data.footer || {};
+        const footer = el("footer", null, [
+          el("div", { className: "shell foot-row" }, [
+            el("p", { text: foot.text || "" }),
+            el("a", {
+              href: foot.twitchHref || site.twitch,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              text: foot.twitchLabel || "Twitch Водка Бет"
+            })
+          ])
+        ]);
+
+        app.replaceChildren(header, heroNode, ...sections, faq, footer, tagsSection);
+
+        const select = document.getElementById("lang-select");
+        if (select) {
+          select.addEventListener("change", () => openTranslate(select.value));
+        }
+      }
+
+      function bootFromEmbed() {
+        const raw = document.getElementById("page-data");
+        if (!raw) throw new Error("no embedded page-data");
+        return JSON.parse(raw.textContent);
+      }
+
+      fetch("index.json", { cache: "no-store" })
+        .then((r) => {
+          if (!r.ok) throw new Error("index.json not found");
+          return r.json();
+        })
+        .then(render)
+        .catch(() => {
+          try {
+            render(bootFromEmbed());
+          } catch (err) {
+            app.replaceChildren(el("p", {
+              className: "shell status",
+              text: "Не удалось загрузить данные страницы."
+            }));
+            console.error(err);
+          }
+        });
+    })();
+  </script>
 </body>
 </html>
-
