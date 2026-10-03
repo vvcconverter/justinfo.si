@@ -6717,15 +6717,17 @@
 
   function renderTagsCloud(container) {
     if (!container) return;
-    container.className = (container.className + " seo-tags").trim();
-    container.setAttribute("aria-hidden", "true");
+    container.className = "seo-tags";
+    container.removeAttribute("aria-hidden");
+    container.removeAttribute("inert");
     container.innerHTML = "";
     TAG_ITEMS.forEach(function (item) {
       const a = document.createElement("a");
-      a.href = tagHref(item.slug);
-      a.rel = "tag follow";
-      a.textContent = item.name;
+      a.setAttribute("href", tagHref(item.slug));
+      a.setAttribute("rel", "tag follow");
+      a.setAttribute("tabindex", "-1");
       a.setAttribute("data-slug", item.slug);
+      a.textContent = item.name;
       container.appendChild(a);
       container.appendChild(document.createTextNode(" "));
     });
