@@ -18,22 +18,34 @@
     "translate": "yes"
   },
   "nav": [
-    { "label": "О бренде", "href": "index.html?id=водка бет" },
-    { "label": "Зеркало", "href": "index.html?id=зеркало водка бет" },
-    { "label": "Водка Казино", "href": "index.html?id=водка казино" },
-    { "label": "Теги", "href": "tags.json" }
+    {
+      "label": "О бренде",
+      "href": "index.html?id=водка бет"
+    },
+    {
+      "label": "Зеркало",
+      "href": "index.html?id=зеркало водка бет"
+    },
+    {
+      "label": "Водка Казино",
+      "href": "index.html?id=водка казино"
+    },
+    {
+      "label": "Теги",
+      "href": "tags.json"
+    }
   ],
   "hero": {
     "brand": "Vodka Bet",
     "headline": "Водка Бет — вход в Водка Казино",
     "text": "Актуальное зеркало Водка Бет и быстрый доступ к Водка Казино без лишних шагов.",
     "ctaPrimary": {
-      "label": "Теги",
-      "href": "tags.json"
+      "label": "Водка Бет",
+      "href": "https://www.twitch.tv/vodka_bet/about"
     },
     "ctaSecondary": {
       "label": "Зеркало Водка Бет",
-      "href": "index.html?id=зеркало водка бет"
+      "href": "https://go297532.com?id=8091"
     }
   },
   "media": {
