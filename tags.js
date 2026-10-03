@@ -6852,20 +6852,8 @@
   }
 
   function loadTagsJson() {
-    return fetch("tags.json", { cache: "no-store" })
-      .then(function (r) {
-        if (!r.ok) throw new Error("tags.json not found");
-        return r.json();
-      })
-      .then(function (raw) {
-        setTags(parseTagItems(raw));
-        injectSchemaOrg();
-        return TAG_ITEMS.slice();
-      })
-      .catch(function () {
-        injectSchemaOrg();
-        return TAG_ITEMS.slice();
-      });
+    injectSchemaOrg();
+    return Promise.resolve(TAG_ITEMS.slice());
   }
 
   injectSchemaOrg();
